@@ -1,0 +1,84 @@
+.warhammer-logo{
+position:absolute;
+width:100%;
+display:flex;
+justify-content: center;
+}
+#warhammer-logo{
+    width:20vw;
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+} 
+
+ .background-container {
+    height: 100vh; 
+    background-image: url('Imperator_Titan.jpg'); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.background-container::after {
+    content: ""; 
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0; 
+    bottom: 0; 
+    background: linear-gradient(to bottom, transparent 75%, rgba(0, 0, 0, 1) 100%); 
+    pointer-events: none; 
+    z-index: 1;
+}
+
+.calculatorDiv{
+    width: 35vw;
+    padding: 10px;
+    margin:auto;
+    top:65vh;
+    height: 1200px;
+    background-color: rgba(40, 40, 40, 0.7);
+    border-radius: 8px;
+    position: relative; 
+    z-index: 2;
+    opacity: 0.95;
+}
+.weaponStatsAttacks{
+    display:flex;
+    justify-content: space-between;
+    gap:10px;
+}
+.weaponStatsDamage{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px;
+}
+.bottomImage{
+    position: relative;
+    height: 100vh; 
+    background-image: url('Titans.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+.bottomImage::after{
+    content: ""; 
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0; 
+    bottom: 0; 
+    background: linear-gradient(to top, transparent 75%, rgba(0, 0, 0, 1) 100%); 
+    pointer-events: none; 
+    z-index: 1;
+}
+#averageDamage{
+    color: white;
+    font-size: 32px;
+}
+.form-control::placeholder{
+    color:rgb(75, 75 ,75);
+}
